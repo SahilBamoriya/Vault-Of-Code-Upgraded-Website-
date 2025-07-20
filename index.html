@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaultofCodes Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="brand-header">
+    <img src="unnamed_theme_colored (2).png" alt="VaultofCodes Logo" class="brand-logo" />
+    <h1 class="center-title">Vault of Codes</h1>
+  </header>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+    <!-- Login Page -->
+    <main id="login-section">
+      <div class="container">
+        <h2>Login</h2>
+        <input id="login-gmail" type="email" placeholder="Enter your Gmail" />
+        <input id="login-password" type="password" placeholder="Enter your Password" />
+        <input id="login-mobile" type="text" placeholder="Enter your Mobile Number" />
+        <input id="login-dob" type="date" />
+        <select id="login-gender">
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <button onclick="loginWithGmail()">Login</button>
+        <div id="login-error" class="error-message"></div>
+      </div>
+    </main>
+
+    <!-- Home Page -->
+    <main id="homepage-section" class="hidden">
+      <div class="container">
+        <img src="unnamed_theme_colored (2).png" alt="VaultofCodes Logo" class="brand-logo" />
+        <h2 class="center-title">Welcome to Vault of Codes</h2>
+        <div class="user-info-card">
+          <p><strong>Gmail:</strong> <span id="home-gmail"></span></p>
+          <p><strong>Mobile Number:</strong> <span id="home-mobile"></span></p>
+          <p><strong>Date of Birth:</strong> <span id="home-dob"></span></p>
+          <p><strong>Gender:</strong> <span id="home-gender"></span></p>
+        </div>
+        <div class="study-columns">
+          <div class="study-col">
+            <h3>Notes</h3>
+            <textarea placeholder="Write your notes here..."></textarea>
+          </div>
+          <div class="study-col">
+            <h3>To-Do</h3>
+            <textarea placeholder="List your tasks..."></textarea>
+          </div>
+          <div class="study-col">
+            <h3>Reminders</h3>
+            <textarea placeholder="Set reminders..."></textarea>
+          </div>
+        </div>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

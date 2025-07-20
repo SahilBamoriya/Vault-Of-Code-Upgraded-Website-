@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom right, #0f0f2f, #1e1e4d, #000814);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-header {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.brand-logo {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 150px;
+  height: auto;
+}
+
+.center-title {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #00bfff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 800px;
+  width: 95%;
+  box-shadow: 0 0 25px rgba(0, 174, 255, 0.3);
+  backdrop-filter: blur(12px);
+  margin-bottom: 2rem;
+}
+
+.container h2 {
+  text-align: center;
+  color: #00bfff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #00bfff;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  font-size: 1.1rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.05rem;
+}
+
+button {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #00bfff, #4b6cb7);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #4b6cb7, #00bfff);
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.study-columns {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.study-col {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.study-col textarea {
+  height: 140px;
+  font-size: 1rem;
+}
+
+.user-info-card p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
